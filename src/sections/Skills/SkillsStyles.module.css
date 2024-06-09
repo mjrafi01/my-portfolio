@@ -1,0 +1,104 @@
+/* src/Skills.css */
+
+.skills {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Added gap to space out skill cards */
+}
+
+.skillCard {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  flex: 0 1 calc(33.333% - 30px); /* Three cards per row */
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skillCard img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s;
+  margin-bottom: 10px;
+}
+
+.skillCard:hover img {
+  transform: scale(1.2);
+}
+
+.skillCard h4 {
+  margin: 10px 0 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .skills {
+    padding: 40px 50px;
+  }
+
+  .skillCard {
+    flex: 0 1 calc(50% - 30px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 30px 30px;
+  }
+
+  .skillCard {
+    flex: 0 1 calc(50% - 20px); /* Two cards per row */
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .skillCard img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skillCard h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 20px 10px;
+  }
+
+  .skillCard {
+    flex: 0 1 80%; /* One card per row */
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .skillCard img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skillCard h4 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+  p {
+    font-size: 16px;
+    color: var(--footer-text-color);
+  }
+}
+span {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center;    /* Center the icons vertically if needed */
+  gap: 20px;              /* Add space between the icons */
+}
+
+span a {
+  display: inline-block;
+  width: 40px;            /* Set a fixed width for the icons */
+  height: 40px;           /* Set a fixed height for the icons */
+}
+
+span a img {
+  width: 100%;            /* Make the image take the full width of the anchor */
+  height: 100%;           /* Make the image take the full height of the anchor */
+  object-fit: contain;    
+}
